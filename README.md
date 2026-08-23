@@ -10,13 +10,13 @@ If GitHub fails to render the native `.ipynb` previews on mobile devices, tap th
 
 ### 1. Data Cleaning & Exploratory Data Analysis (EDA)
 Perform data auditing, handle missing values, clean data types, and run bivariate EDA.
-* [![View on nbviewer](https://img.shields.io/badge/Render-nbviewer-orange?style=for-the-badge&logo=jupyter)](https://nbviewer.org/github/PalakHalwai/customer-churn-prediction/blob/main/01_eda_and_cleaning.ipynb)
-* [![Open In Colab](https://img.shields.io/badge/Open%20in-Colab-blue?style=for-the-badge&logo=googlecolab)](https://colab.research.google.com/github/PalakHalwai/customer-churn-prediction/blob/main/01_eda_and_cleaning.ipynb)
+* [![View on nbviewer](https://img.shields.io/badge/Render-nbviewer-orange?style=for-the-badge&logo=jupyter)](https://nbviewer.org/github/PalakHalwai/customer-churn-prediction/blob/main/notebooks/01_eda_and_cleaning.ipynb)
+* [![Open In Colab](https://img.shields.io/badge/Open%20in-Colab-blue?style=for-the-badge&logo=googlecolab)](https://colab.research.google.com/github/PalakHalwai/customer-churn-prediction/blob/main/notebooks/01_eda_and_cleaning.ipynb)
 
 ### 2. Feature Engineering & Modeling
 Feature encoding, dataset splitting, training baseline & ensemble models, and evaluating classification metrics.
-* [![View on nbviewer](https://img.shields.io/badge/Render-nbviewer-orange?style=for-the-badge&logo=jupyter)](https://nbviewer.org/github/PalakHalwai/customer-churn-prediction/blob/main/02_feature_engineering_and_modeling.ipynb)
-* [![Open In Colab](https://img.shields.io/badge/Open%20in-Colab-blue?style=for-the-badge&logo=googlecolab)](https://colab.research.google.com/github/PalakHalwai/customer-churn-prediction/blob/main/02_feature_engineering_and_modeling.ipynb)
+* [![View on nbviewer](https://img.shields.io/badge/Render-nbviewer-orange?style=for-the-badge&logo=jupyter)](https://nbviewer.org/github/PalakHalwai/customer-churn-prediction/blob/main/notebooks/02_feature_engineering_and_modeling.ipynb)
+* [![Open In Colab](https://img.shields.io/badge/Open%20in-Colab-blue?style=for-the-badge&logo=googlecolab)](https://colab.research.google.com/github/PalakHalwai/customer-churn-prediction/blob/main/notebooks/02_feature_engineering_and_modeling.ipynb)
 
 ---
 
@@ -38,8 +38,10 @@ Feature encoding, dataset splitting, training baseline & ensemble models, and ev
 
 ```text
 customer-churn-prediction/
-│── 01_eda_and_cleaning.ipynb                   # Raw Notebook 1 (EDA & Cleaning)
-│── 02_feature_engineering_and_modeling.ipynb  # Raw Notebook 2 (Feature Eng & Modeling)
-│── 01_eda_and_cleaning.html                    # Exported Static HTML Output
-│── 02_feature_engineering_and_modeling.html    # Exported Static HTML Output
+│── notebooks/
+│   ├── 01_eda_and_cleaning.ipynb               # Raw Notebook 1 (EDA & Cleaning)
+│   └── 02_feature_engineering_and_modeling.ipynb # Raw Notebook 2 (Feature Eng & Modeling)
+│── reports/
+│   ├── 01_eda_and_cleaning.html                # Exported Static HTML Output
+│   └── 02_feature_engineering_and_modeling.html # Exported Static HTML Output
 └── README.md                                   # Project documentation
