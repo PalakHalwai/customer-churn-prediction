@@ -1,27 +1,29 @@
-# customer-churn-prediction
-# 📊 End-to-End Customer Churn Prediction
+# 📊 Customer Churn Prediction Project
 
-Predicting customer churn using machine learning to enable proactive retention actions and minimize revenue loss.
+This project focuses on analyzing customer behavior and building machine learning models to predict customer churn. 
 
-## 📌 Project Overview
-Customer churn is a critical metric for subscription-based businesses. This end-to-end data science project analyzes customer behavior, subscription contracts, and payment history to predict churn probability and categorize customers into actionable risk tiers.
+---
 
-## 🛠️ Tech Stack
-* **Language:** Python
-* **Data Processing:** Pandas, NumPy
-* **Visualization:** Matplotlib, Seaborn
-* **Machine Learning:** Scikit-Learn (Logistic Regression, Random Forest)
-* **Version Control:** Git, GitHub
+## 📓 Project Notebooks
 
-## 📂 Repository Structure
-## 📈 Key Insights & Model Results
-* **Overall Churn Rate:** ~26.5%
-* **Key Drivers of Churn:** Month-to-month contracts, electronic check payments, and short tenure (< 12 months).
-* **Model Performance:**
-  * **Logistic Regression:** ROC-AUC = 0.8425 | Accuracy = 80%
-  * **Random Forest:** ROC-AUC = 0.8220 | Accuracy = 79%
+If GitHub fails to render the notebook previews on mobile or desktop, click the badges below to view the interactive versions instantly via **nbviewer** or **Google Colab**:
 
-## 🎯 Risk Segmentation Strategy
-* **Low Risk (0 - 30%):** Standard automated engagement.
-* **Medium Risk (30 - 70%):** Proactive monitoring and targeted retention campaigns.
-* **High Risk (70 - 100%):** Immediate human outreach, custom discounts, and long-term contract conversion offers.
+### 1. Data Cleaning & Exploratory Data Analysis (EDA)
+* [![View on nbviewer](https://img.shields.io/badge/Render-nbviewer-orange?style=for-the-badge&logo=jupyter)](https://nbviewer.org/github/PalakHalwai/Customer-churn-prediction/blob/main/01_eda_and_cleaning.ipynb)
+* [![Open In Colab](https://img.shields.io/badge/Open%20in-Colab-blue?style=for-the-badge&logo=googlecolab)](https://colab.research.google.com/github/PalakHalwai/Customer-churn-prediction/blob/main/01_eda_and_cleaning.ipynb)
+
+### 2. Feature Engineering & Modeling
+* [![View on nbviewer](https://img.shields.io/badge/Render-nbviewer-orange?style=for-the-badge&logo=jupyter)](https://nbviewer.org/github/PalakHalwai/Customer-churn-prediction/blob/main/02_feature_engineering_and_modeling.ipynb)
+* [![Open In Colab](https://img.shields.io/badge/Open%20in-Colab-blue?style=for-the-badge&logo=googlecolab)](https://colab.research.google.com/github/PalakHalwai/Customer-churn-prediction/blob/main/02_feature_engineering_and_modeling.ipynb)
+
+---
+
+## 🛠️ Project Structure
+```text
+Customer-churn-prediction/
+│── 01_eda_and_cleaning.ipynb
+│── 02_feature_engineering_and_modeling.ipynb
+│── reports/
+│   ├── 01_eda_and_cleaning.html
+│   └── 02_feature_engineering_and_modeling.html
+└── README.md
