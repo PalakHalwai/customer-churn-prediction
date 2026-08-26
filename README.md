@@ -1,36 +1,36 @@
 # 📊 Customer Churn Prediction & Analytics
 
-A comprehensive end-to-end data science project analyzing customer attrition patterns and building machine learning models to predict churn risk.
+A comprehensive end-to-end data science project analyzing customer attrition patterns, building machine learning models to predict churn risk, and deploying an interactive web application.
 
+---
+
+## 🚀 Live Interactive Dashboard
+
+Access the deployed Streamlit web application to test real-time customer risk predictions:
+👉 **[Launch Live Churn Predictor App]https://customer-churn-prediction-ceuvdnrckyxatndjznvcfg.streamlit.app/
 ---
 
 ## 📓 Interactive Project Notebooks
 
-If GitHub fails to render the native `.ipynb` previews on mobile devices, tap the interactive badges below to view the full notebooks with pre-rendered visual charts, code outputs, and classification reports:
+If GitHub fails to render native `.ipynb` previews on mobile devices, use the interactive badges below to view full notebooks with pre-rendered charts and classification metrics:
 
 ### 1. Data Cleaning & Exploratory Data Analysis (EDA)
-Perform data auditing, handle missing values, clean data types, and run bivariate EDA.
+Perform data auditing, handle missing values, clean data types, and evaluate feature relationships.
 * [![View on nbviewer](https://img.shields.io/badge/Render-nbviewer-orange?style=for-the-badge&logo=jupyter)](https://nbviewer.org/github/PalakHalwai/customer-churn-prediction/blob/main/notebooks/01_eda_and_cleaning.ipynb)
 * [![Open In Colab](https://img.shields.io/badge/Open%20in-Colab-blue?style=for-the-badge&logo=googlecolab)](https://colab.research.google.com/github/PalakHalwai/customer-churn-prediction/blob/main/notebooks/01_eda_and_cleaning.ipynb)
 
-### 2. Feature Engineering & Modeling
-Feature encoding, dataset splitting, training baseline & ensemble models, and evaluating classification metrics.
+### 2. Feature Engineering & Predictive Modeling
+Feature encoding, train-test splitting, evaluating baseline and ensemble models, and building risk segments.
 * [![View on nbviewer](https://img.shields.io/badge/Render-nbviewer-orange?style=for-the-badge&logo=jupyter)](https://nbviewer.org/github/PalakHalwai/customer-churn-prediction/blob/main/notebooks/02_feature_engineering_and_modeling.ipynb)
 * [![Open In Colab](https://img.shields.io/badge/Open%20in-Colab-blue?style=for-the-badge&logo=googlecolab)](https://colab.research.google.com/github/PalakHalwai/customer-churn-prediction/blob/main/notebooks/02_feature_engineering_and_modeling.ipynb)
 
 ---
 
-## 📌 Project Workflow Overview
+## 📌 Project Highlights & Key Findings
 
-### 🔍 Phase 1: Data Cleaning & Exploratory Data Analysis
-* **Data Type Rectification:** Coerced `TotalCharges` into numeric values and handled missing records gracefully.
-* **Class Imbalance Check:** Identified target distribution imbalance between Churn vs. Non-Churn customers.
-* **Feature Relationships:** Analyzed customer tenure, contract types (Month-to-month vs. Two-year), internet service types, and payment methods against churn rates.
-
-### ⚙️ Phase 2: Feature Engineering & Predictive Modeling
-* **Preprocessing:** Applied One-Hot Encoding / Label Encoding to categorical variables.
-* **Model Training:** Built and compared classification models (Logistic Regression, Decision Trees, Random Forest, AdaBoost).
-* **Performance Evaluation:** Evaluated models using Precision, Recall, F1-Score, and ROC-AUC metrics.
+* **Model Performance:** Logistic Regression achieved **80% accuracy** and an **ROC-AUC score of 0.8425**.
+* **Key Drivers:** Contract duration (month-to-month), customer tenure, and monthly charges emerged as top churn indicators.
+* **Risk Stratification:** Implemented probability-based scoring to segment accounts into High, Medium, and Low risk tiers for targeted customer retention strategies.
 
 ---
 
@@ -39,9 +39,11 @@ Feature encoding, dataset splitting, training baseline & ensemble models, and ev
 ```text
 customer-churn-prediction/
 │── notebooks/
-│   ├── 01_eda_and_cleaning.ipynb               # Raw Notebook 1 (EDA & Cleaning)
-│   └── 02_feature_engineering_and_modeling.ipynb # Raw Notebook 2 (Feature Eng & Modeling)
+│   ├── 01_eda_and_cleaning.ipynb               # Data Cleaning & Analysis Notebook
+│   └── 02_feature_engineering_and_modeling.ipynb # Modeling & Evaluation Notebook
 │── reports/
-│   ├── 01_eda_and_cleaning.html                # Exported Static HTML Output
-│   └── 02_feature_engineering_and_modeling.html # Exported Static HTML Output
-└── README.md                                   # Project documentation
+│   ├── 01_eda_and_cleaning.html                # Static HTML Export (EDA)
+│   └── 02_feature_engineering_and_modeling.html # Static HTML Export (Modeling)
+│── app.py                                      # Streamlit Dashboard Source Code
+│── requirements.txt                            # App Dependencies
+└── README.md                                   # Project Documentation
